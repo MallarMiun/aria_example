@@ -6,4 +6,4 @@ Den andra med Wai-Aria.
 
 Det finns också två JavaScript-filer som visar och döljer element, den ena ändrar också på ett Wai-Aria-attribut.
 
-/Malin Larsson, Mittuniverstitetet
+/Malin Larsson, Mittuniversitetet
