@@ -1,0 +1,70 @@
+<!--Kod av Malin Larsson, Mittuniversitetet-->
+<!--HÄR ÄR KOD DÄR INTE WAI-ARIA ANVÄNDS-->
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Aria</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Fontawesome ikoner-->
+    <script src="https://kit.fontawesome.com/f001f8c4bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="headerwrap">
+                <h1><a href="index.html">Demo-aria</a></h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Utan ARIA</a>
+                            <a href="with.html">Med ARIA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Information om ARIA (utan ARIA)</h2>
+                <ul id="expander">
+                    <li>
+                        <button class="expanderBtn">Vad är Aria? <i class="fas fa-chevron-down arrow"></i></button>
+                        <article class="textExpand">
+                            <p>WAI-ARIA är en teknisk standard som används för att göra webbinnehåll mer tillgängligt
+                                för
+                                personer som använder hjälpmedel (till exempel skärmläsare).</p>
+                        </article>
+                    </li>
+                    <li>
+                        <button class="expanderBtn">Hur ska jag använda Aria? <i
+                                class="fas fa-chevron-down arrow"></i></button>
+                        <article class="textExpand">
+                            <p>Du använder ARIA genom att en eller fler aria-attribut läggs i en HTML-element</p>
+                        </article>
+                    </li>
+                    <li>
+                        <button class="expanderBtn">När ska jag använda Aria? <i
+                                class="fas fa-chevron-down arrow"></i></button>
+                        <article class="textExpand">
+                            <p><b>Ingen</b> Aria är bättre än <b>dålig</b> Aria. Men det bör användas som hjälpmedel för
+                                personer som använder skärmläsare när något görs dynamiskt på en webbplats.</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>DT068G - Webbanvändbarhet</p>
+        </footer>
+    </div>
+    <script src="js/no_aria.js"></script>
+</body>
+
+</html>
