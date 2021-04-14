@@ -5,3 +5,5 @@ Det finns två html-filer, den ena där ingen Aria används om man vill testa hu
 Den andra med Wai-Aria.
 
 Det finns också två JavaScript-filer som visar och döljer element, den ena ändrar också på ett Wai-Aria-attribut.
+
+/Malin Larsson, Mittuniverstitetet
