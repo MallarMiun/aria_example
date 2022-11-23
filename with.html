@@ -20,7 +20,7 @@
         <header>
             <div id="headerwrap">
                 <h1><a href="index.html">Demo-aria</a></h1>
-                <nav>
+                <nav aria-label="huvudmeny">
                     <ul>
                         <li>
                             <a href="index.html">Utan ARIA</a>
@@ -36,7 +36,7 @@
                 <ul id="expander" aria-label="frågor och svar">
                     <li>
                         <!--Aria-expended måste ändras till true med JS när article blir synlig-->
-                        <button class="expanderBtn" id="btn1" aria-expanded="false" aria-controls="sect1">Vad är Aria?
+                        <button class="expanderBtn" aria-expanded="false" aria-controls="sect1">Vad är Aria?
                             <i class="fas fa-chevron-down arrow"></i></button>
                         <article class="textExpand" id="sect1" role="region">
                             <p>WAI-ARIA är en teknisk standard som används för att göra webbinnehåll mer tillgängligt
@@ -44,7 +44,7 @@
                         </article>
                     </li>
                     <li>
-                        <button class="expanderBtn" id="btn2" aria-expanded="false" aria-controls="sect2">Hur ska jag
+                        <button class="expanderBtn" aria-expanded="false" aria-controls="sect2">Hur ska jag
                             använda Aria? <i class="fas fa-chevron-down arrow"></i></button>
                         <!--Här används aria-live=polite, skärmläsaren kommer läsa upp texten vid tillfälle-->
                         <article class="textExpand" id="sect2" role="region" aria-live="polite">
@@ -52,7 +52,7 @@
                         </article>
                     </li>
                     <li>
-                        <button class="expanderBtn" id="btn3" aria-expanded="false" aria-controls="sect3">När ska jag
+                        <button class="expanderBtn" aria-expanded="false" aria-controls="sect3">När ska jag
                             använda Aria? <i class="fas fa-chevron-down arrow"></i></button>
                         <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
                         <article class="textExpand" id="sect3" role="region" aria-live="assertive">
