@@ -20,14 +20,14 @@ function init() {
                 //Är den synlig så döljs den med css
                 textExpend.style.display = "none";
 
-                //Ändrar pil-ikon
+                //Ändrar pil-ikon (klassnamn)
                 this.firstElementChild.classList.remove("fa-chevron-up");
                 this.firstElementChild.classList.add("fa-chevron-down");
             } else {
                 //article-visas
                 textExpend.style.display = "block";
 
-                //ändrar pil-ikon
+                //ändrar pil-ikon (klassnamn)
                 this.firstElementChild.classList.remove("fa-chevron-down");
                 this.firstElementChild.classList.add("fa-chevron-up");
 
