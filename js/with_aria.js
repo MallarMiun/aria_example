@@ -1,38 +1,45 @@
 /*Kod av Malin Larsson, Mittuniversitetet*/
 "use strict";
 
-//Hämtar in knapparna
-const expanderBtn = document.getElementsByClassName("expanderBtn");
+window.onload = init;
 
-//Lägger en händelselyssnare på varje knapp
-for (let i = 0; i < expanderBtn.length; i++) {
+function init() {
 
-    expanderBtn[i].addEventListener("click", function () {
-        //Hämtar in nästa element vilket blir article-elementet efter knappen som trycks
-        let textExpand = this.nextElementSibling;
+    //Hämtar in knapparna
+    const expanderBtn = document.getElementsByClassName("expanderBtn");
 
-        //Kontroll om article är synlig
-        if (textExpand.style.display === "block") {
-            //Är den synlig så döljs den med css
-            textExpand.style.display = "none";
+    //Lägger en händelselyssnare på varje knapp
+    for (let i = 0; i < expanderBtn.length; i++) {
 
-            //Ändrar aria-expended från true till false(infälld knapp)
-            this.setAttribute("aria-expanded", "false");
+        expanderBtn[i].addEventListener("click", function () {
+            //Hämtar in nästa element vilket blir article-elementet efter knappen som trycks
+            let textExpand = this.nextElementSibling;
 
-            //Ändrar pil-ikon
-            this.firstElementChild.classList.remove("fa-chevron-up");
-            this.firstElementChild.classList.add("fa-chevron-down");
+            //Kontroll om article är synlig
+            if (textExpand.style.display === "block") {
+                //Är den synlig så döljs den med css
+                textExpand.style.display = "none";
 
-        } else {
-            //article-visas
-            textExpand.style.display = "block";
+                //Ändrar aria-expended från true till false(infälld knapp)
+                this.setAttribute("aria-expanded", "false");
 
-            //Ändrar aria-expanded från false till true(utvidgad knapp)
-            this.setAttribute("aria-expanded", "true");
+                //Ändrar pil-ikon
+                this.firstElementChild.classList.remove("fa-chevron-up");
+                this.firstElementChild.classList.add("fa-chevron-down");
 
-            //ändrar pil-ikon
-            this.firstElemtChild.classList.remove("fa-chevron-down");
-            this.firstElementchild.classList.add("fa-chevron-up");
-        }
-    })
+            } else {
+                //article-visas
+                textExpand.style.display = "block";
+
+                //Ändrar aria-expanded från false till true(utvidgad knapp)
+                this.setAttribute("aria-expanded", "true");
+
+                //ändrar pil-ikon
+                this.firstElemtChild.classList.remove("fa-chevron-down");
+                this.firstElementchild.classList.add("fa-chevron-up");
+            }
+        })
+    }
+
 }
+
