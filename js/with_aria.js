@@ -35,8 +35,8 @@ function init() {
                 this.setAttribute("aria-expanded", "true");
 
                 //ändrar pil-ikon
-                this.firstElemtChild.classList.remove("fa-chevron-down");
-                this.firstElementchild.classList.add("fa-chevron-up");
+                this.firstElementChild.classList.remove("fa-chevron-down");
+                this.firstElementChild.classList.add("fa-chevron-up");
             }
         })
     }
