@@ -58,6 +58,7 @@ header{
     z-index: 10;
     background-color: white;
     box-shadow: rgb(213, 212, 212) 0px 1px 5px;
+    padding: 0.5% 0;
 }
 #headerwrap {
     width: 100%;
@@ -83,11 +84,16 @@ nav ul {
 }
 nav li {
     white-space: nowrap;
+    float: left;
+    margin-right: 5%;
 }
 nav li a {
-    margin-right: 5%;
     padding: 1%;
     text-decoration: none;
+}
+
+.active {
+    text-decoration: underline 2px;
 }
 
 main {
