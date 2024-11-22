@@ -38,28 +38,34 @@
                         <!--Aria-expended måste ändras till true med JS när article blir synlig-->
                         <button class="expanderBtn" aria-expanded="false" aria-controls="sect1">Vad är Aria?
                             <i class="fas fa-chevron-down arrow"></i></button>
-                        <article class="textExpand" id="sect1">
-                            <p>WAI-ARIA är en teknisk standard som används för att göra webbinnehåll mer tillgängligt
-                                för personer som använder hjälpmedel (till exempel skärmläsare).</p>
-                        </article>
+                            <div>
+                                <article class="textExpand" id="sect1">
+                                    <p>WAI-ARIA är en teknisk standard som används för att göra webbinnehåll mer tillgängligt
+                                        för personer som använder hjälpmedel (till exempel skärmläsare).</p>
+                                </article>
+                            </div>
                     </li>
                     <li>
                         <button class="expanderBtn" aria-expanded="false" aria-controls="sect2">Hur ska jag
                             använda Aria? <i class="fas fa-chevron-down arrow"></i></button>
                         <!--Här används aria-live=polite, skärmläsaren kommer läsa upp texten vid tillfälle-->
-                        <article class="textExpand" id="sect2" aria-live="polite">
-                            <p>Du använder ARIA genom att en eller fler aria-attribut läggs i ett HTML-element</p>
-                        </article>
+                        <div aria-live="polite">
+                            <article class="textExpand" id="sect2">
+                                <p>Du använder ARIA genom att en eller fler aria-attribut läggs i ett HTML-element</p>
+                            </article>
+                        </div>
                     </li>
                     <li>
                         <button class="expanderBtn" aria-expanded="false" aria-controls="sect3">När ska jag
                             använda Aria? <i class="fas fa-chevron-down arrow"></i></button>
                         <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
-                        <article class="textExpand" id="sect3" aria-live="assertive">
-                            <p><strong>Ingen</strong> Aria är bättre än <strong>dålig</strong> Aria. Men det bör
-                                användas som hjälpmedel för
-                                personer som använder skärmläsare när något görs dynamiskt på en webbplats.</p>
-                        </article>
+                        <div aria-live="assertive">
+                            <article class="textExpand" id="sect3">
+                                <p><strong>Ingen</strong> Aria är bättre än <strong>dålig</strong> Aria. Men det bör
+                                    användas som hjälpmedel för
+                                    personer som använder skärmläsare när något görs dynamiskt på en webbplats.</p>
+                            </article>
+                        </div>
                     </li>
                 </ul>
             </section>
