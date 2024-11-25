@@ -13,19 +13,19 @@ function init() {
 
         expenderBtn[i].addEventListener('click', function () {
             //Hämtar in nästa element vilket blir article-elementet efter knappen som trycks
-            let textExpend = this.nextElementSibling;
+            let textExpand = this.nextElementSibling;
 
             //Kontroll om article är synlig
-            if (textExpend.style.display === "block") {
+            if (textExpand.style.display === "block") {
                 //Är den synlig så döljs den med css
-                textExpend.style.display = "none";
+                textExpand.style.display = "none";
 
                 //Ändrar pil-ikon (klassnamn)
                 this.firstElementChild.classList.remove("fa-chevron-up");
                 this.firstElementChild.classList.add("fa-chevron-down");
             } else {
                 //article-visas
-                textExpend.style.display = "block";
+                textExpand.style.display = "block";
 
                 //ändrar pil-ikon (klassnamn)
                 this.firstElementChild.classList.remove("fa-chevron-down");

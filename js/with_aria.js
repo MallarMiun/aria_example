@@ -8,11 +8,6 @@ function init() {
     //Hämtar in knapparna
     const expanderBtn = document.getElementsByClassName("expanderBtn");
 
-    let articleContent = [
-        `WAI-ARIA är en teknisk standard som används för att göra webbinnehåll mer tillgängligt för personer som använder hjälpmedel (till exempel skärmläsare).`
-        , `Du använder ARIA genom att en eller fler aria-attribut läggs i ett HTML-element`,
-        `<strong>Ingen</strong> Aria är bättre än <strong>dålig</strong> Aria. Men det bör användas som hjälpmedel för personer som använder skärmläsare när något görs dynamiskt på en webbplats.`]
-
     //Lägger en händelselyssnare på varje knapp
     for (let i = 0; i < expanderBtn.length; i++) {
 
